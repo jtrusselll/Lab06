@@ -1,3 +1,6 @@
+
+#collaborated by Zach Ostroff
+
 def encode(userInput):
     encString = ''
     for i in userInput:
