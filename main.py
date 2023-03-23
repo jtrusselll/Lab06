@@ -8,6 +8,16 @@ def encode(userInput):
     print('Your password has been encoded and stored!\n')
     return encString
 
+def decode(encString):
+    script = ''
+    for i in encString:
+        num = int(i) - 3
+        if num < 0:
+            num += 10
+        script += str(num)
+    return script
+
+
 
 def main():
     go = True
@@ -26,8 +36,9 @@ def main():
         elif option == '1':
             userInput = input('Please enter your password to encode: ')
             encString = encode(userInput)
-        # elif option == '2':
-        # collaboration portion
+        elif option == '2':
+            InitialString = decode(encString)
+            print(f'The encoded password is {encString}, and the original password is {InitialString}.\n')
         else:
             print('Invalid input')
 
