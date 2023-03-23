@@ -1,4 +1,4 @@
-
+#started by Jaxon Russell
 #collaborated by Zach Ostroff
 
 def encode(userInput):
