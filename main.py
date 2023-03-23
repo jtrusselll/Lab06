@@ -27,8 +27,7 @@ def main():
             userInput = input('Please enter your password to encode: ')
             encString = encode(userInput)
         # elif option == '2':
-        #     if encString != '':
-        #         decode(encString)
+        # collaboration portion
         else:
             print('Invalid input')
 
